@@ -199,7 +199,7 @@ int main(int argc, char* argv[]) {
 			drawnPathPoints.push_back({ currentEndPoint.x, currentEndPoint.y });
 			window.drawLines(0, 255, 255, 100, & drawnPathPoints[0], drawnPathPoints.size());
 
-			const float dt = 0.001; //((2 * M_PI) / (transformedValues.size()));
+			const float dt = ((2 * M_PI) / (transformedValues.size()));
 			time += dt;
 
 			if (time > 2.0 * M_PI) {
